@@ -1,16 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="container-custom">
+    <Top/>
+    <Update/>
+    <Character/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import Top from './components/Top';
+import Update from './components/Update';
+import Character from './components/Character';
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld,
-  },
+    Top,
+    Update,
+    Character
+  }
 };
 </script>
 
@@ -19,8 +25,10 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.container-custom {
+  max-width: 375px;
+  margin: 0 auto;
 }
 </style>
