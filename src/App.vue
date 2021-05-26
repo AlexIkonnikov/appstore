@@ -3,6 +3,7 @@
     <Top/>
     <Update/>
     <Character/>
+    <WhatsNew/>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Top from './components/Top';
 import Update from './components/Update';
 import Character from './components/Character';
+import WhatsNew from './components/WhatsNew';
 export default {
   name: 'App',
   components: {
     Top,
     Update,
-    Character
+    Character,
+    WhatsNew
   }
 };
 </script>
