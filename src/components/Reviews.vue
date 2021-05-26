@@ -3,13 +3,15 @@
     <div class="d-flex justify-content-start align-items-center mb-2">
       <p class="cl-gray">Оценка касанием:</p>
       <div class="d-flex justify-content-between flex-grow-1 px-3">
-        <Star
-          :count="5"
+        <Mark/>
+        <!--<Star
+          v-for="star in 5"
+          :key="star"
           :width="20"
           :height="20"
           :fill="'none'"
           :stroke="'#177ae4'"
-        />
+        />-->
       </div>
     </div>
     <swiper :slides-per-view="1">
@@ -22,7 +24,8 @@
           <div class="d-flex justify-content-between mb-3">
             <div>
               <Star
-                :count="5"
+                v-for="star in 5"
+                :key="star"
                 :width="15"
                 :height="15"
                 :fill="'#fa8108'"
@@ -99,13 +102,15 @@
 </template>
 
 <script>
-import Star from "./Star";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/swiper.min.css";
+import Star from './Star';
+import Mark from './Mark';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/swiper.min.css';
 export default {
   name: "Reviews",
   components: {
     Star,
+    Mark,
     Swiper,
     SwiperSlide,
   },

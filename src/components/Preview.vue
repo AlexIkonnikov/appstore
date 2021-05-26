@@ -50,7 +50,7 @@ export default {
 
   img {
     border-radius: 5px;
-    min-width: 95%;
+    width: 90%;
   }
 
 </style>
