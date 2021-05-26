@@ -15,37 +15,12 @@
       <div>Социальные сети</div>
     </div>
 
-    <div class="d-flex justify-content-between py-2 pe-3 bb">
-      <div class="cl-gray">Совместимость</div>
-      <div class="d-flex align-items-center">
-        <div class="me-2">Работает на этом iphone</div>
-        <div class="arrow mr-3"></div>
-      </div>
-    </div>
-
-    <div class="d-flex justify-content-between py-2 pe-3 bb">
-      <div class="cl-gray">Геопозиция</div>
-      <div class="d-flex align-items-center">
-        <div class="me-2">Это приложение может использ...</div>
-        <div class="arrow mr-3"></div>
-      </div>
-    </div>
-
-    <div class="d-flex justify-content-between py-2 pe-3 bb">
-      <div class="cl-gray">Языки</div>
-      <div class="d-flex align-items-center">
-        <div class="me-2">русский и ещё 38</div>
-        <div class="arrow mr-3"></div>
-      </div>
-    </div>
-
-    <div class="d-flex justify-content-between py-2 pe-3 bb">
-      <div class="cl-gray">Возраст</div>
-      <div class="d-flex align-items-center">
-        <div class="me-2">12+</div>
-        <div class="arrow mr-3"></div>
-      </div>
-    </div>
+    <MoreInfo 
+      v-for="block in blocks" 
+      :key="block.text"
+      :title="block.title"
+      :text="block.text"
+    />
 
     <div class="d-flex justify-content-between py-2 pe-3 bb">
       <div class="cl-gray">Авторские права</div>
@@ -143,8 +118,22 @@
 </template>
 
 <script>
+import MoreInfo from './MoreInfo';
 export default {
   name: "Info",
+  components: {
+    MoreInfo
+  },
+  data() {
+    return {
+      blocks: [
+        {title:'Совместимость', text: 'Работает на этом iphone'},
+        {title:'Геопозиция', text: 'Это приложение может использ...'},
+        {title:'Языки', text: 'русский и ещё 38'},
+        {title:'Возраст', text: '12+'},
+      ]
+    }
+  }
 };
 </script>
 

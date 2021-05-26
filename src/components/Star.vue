@@ -11,7 +11,7 @@
     viewBox="0 0 475.075 475.075"
     style="enable-background: new 0 0 475.075 475.075"
     xml:space="preserve"
-    v-for="star in Array(count)"
+    v-for="star in count"
     :key="star"
   >
     <g>

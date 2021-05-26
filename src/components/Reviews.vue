@@ -12,85 +12,35 @@
         />
       </div>
     </div>
-    <div class="d-flex cards">
-      <div class="card-review me-2">
-        <div class="d-flex justify-content-between">
-          <p>Ну и зачем ограничили коли...</p>
-          <span class="cl-gray">2 года назад</span>
-        </div>
-        <div class="d-flex justify-content-between mb-3">
-          <div>
-            <Star
-              :count="5"
-              :width="15"
-              :height="15"
-              :fill="'#fa8108'"
-              :stroke="'#fa8108'"
-            />
+    <swiper :slides-per-view="1">
+      <swiper-slide v-for="el in 3" :key="el">
+        <div class="card-review me-2">
+          <div class="d-flex justify-content-between">
+            <p>Ну и зачем ограничили коли...</p>
+            <span class="cl-gray">2 года назад</span>
           </div>
-          <span class="cl-gray">уходим на вайбер</span>
-        </div>
-        <div class="card-review__text">
-          <p>
-            Ну и зачем ограничили количество контактов, которым одновременно
-            можно было пересылать сообщения. Зачем создавать эти неудобства? Как
-            вернуть прежнюю версию?
-          </p>
-        </div>
-      </div>
-
-      <div class="card-review me-2">
-        <div class="d-flex justify-content-between">
-          <p>Ну и зачем ограничили коли...</p>
-          <span class="cl-gray">2 года назад</span>
-        </div>
-        <div class="d-flex justify-content-between mb-3">
-          <div>
-            <Star
-              :count="5"
-              :width="15"
-              :height="15"
-              :fill="'#fa8108'"
-              :stroke="'#fa8108'"
-            />
+          <div class="d-flex justify-content-between mb-3">
+            <div>
+              <Star
+                :count="5"
+                :width="15"
+                :height="15"
+                :fill="'#fa8108'"
+                :stroke="'#fa8108'"
+              />
+            </div>
+            <span class="cl-gray">уходим на вайбер</span>
           </div>
-          <span class="cl-gray">уходим на вайбер</span>
-        </div>
-        <div class="card-review__text">
-          <p>
-            Ну и зачем ограничили количество контактов, которым одновременно
-            можно было пересылать сообщения. Зачем создавать эти неудобства? Как
-            вернуть прежнюю версию?
-          </p>
-        </div>
-      </div>
-
-      <div class="card-review me-2">
-        <div class="d-flex justify-content-between">
-          <p>Ну и зачем ограничили коли...</p>
-          <span class="cl-gray">2 года назад</span>
-        </div>
-        <div class="d-flex justify-content-between mb-3">
-          <div>
-            <Star
-              :count="5"
-              :width="15"
-              :height="15"
-              :fill="'#fa8108'"
-              :stroke="'#fa8108'"
-            />
+          <div class="card-review__text">
+            <p>
+              Ну и зачем ограничили количество контактов, которым одновременно
+              можно было пересылать сообщения. Зачем создавать эти неудобства?
+              Как вернуть прежнюю версию?
+            </p>
           </div>
-          <span class="cl-gray">уходим на вайбер</span>
         </div>
-        <div class="card-review__text">
-          <p>
-            Ну и зачем ограничили количество контактов, которым одновременно
-            можно было пересылать сообщения. Зачем создавать эти неудобства? Как
-            вернуть прежнюю версию?
-          </p>
-        </div>
-      </div>
-    </div>
+      </swiper-slide>
+    </swiper>
     <div class="d-flex justify-content-between mt-3">
       <div class="cl-blue">
         <svg
@@ -150,10 +100,14 @@
 
 <script>
 import Star from "./Star";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/swiper.min.css";
 export default {
   name: "Reviews",
   components: {
     Star,
+    Swiper,
+    SwiperSlide,
   },
 };
 </script>
@@ -164,5 +118,9 @@ export default {
   padding: 10px 10px 20px 10px;
   background-color: #1c1c1e;
   border-radius: 10px;
+
+  & p, span {
+    font-size: 13px;
+  }
 }
 </style>

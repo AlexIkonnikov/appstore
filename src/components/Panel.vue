@@ -201,9 +201,9 @@ export default {
   opacity: 0.9;
   position: fixed;
   bottom: 0;
-  width: 375px;
+  width: 100%;
   height: 50px;
-
+  z-index: 2;
   & p {
     font-size: 10px;
   }
