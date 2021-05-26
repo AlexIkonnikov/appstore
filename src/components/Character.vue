@@ -1,6 +1,6 @@
 <template>
   <div class="app-wrapper">
-    <div class="d-flex cards">
+    <div class="d-flex cards cl-gray">
       <div class="mini-card d-flex flex-column align-items-center">
         <p>2,1 млн оценки</p>
         <b class="mini-card__number">4,8</b>
@@ -54,7 +54,6 @@ export default {
   overflow: scroll;
 }
 .mini-card {
-  color: #8e8e90;
   font-size: 10px;
   text-transform: uppercase;
   flex-shrink: 0;

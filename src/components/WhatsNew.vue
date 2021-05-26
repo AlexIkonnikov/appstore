@@ -25,13 +25,4 @@ export default {
 h2 {
     font-size: 22px;
 }
-
-.cl-blue {
-    color: #177ae4;
-}
-
-.cl-gray {
-    color: #8e8e90;
-}
-
 </style>

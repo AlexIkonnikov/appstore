@@ -7,7 +7,7 @@
       <div class="d-flex flex-column justify-content-between py-2">
         <div>
           <p class="mb-2">WhatsApp Messenger</p>
-          <span>Удобно. Надежно. Безопасно.</span>
+          <span class="cl-gray">Удобно. Надежно. Безопасно.</span>
         </div>
         <div class="d-flex justify-content-between align-items-center">
           <button>Обновить</button>
@@ -50,7 +50,6 @@ export default {
 
   & span {
     font-size: 12px;
-    color: #8e8e90;
   }
 
   & img {
