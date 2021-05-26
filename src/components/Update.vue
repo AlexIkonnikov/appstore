@@ -2,9 +2,9 @@
   <div class="wrapper app-wrapper">
     <div class="d-flex">
       <div class="pe-2">
-        <img src="../assets/img/main-icon.png" />
+        <img src="../assets/img/s.png" />
       </div>
-      <div class="d-flex flex-column justify-content-between py-2">
+      <div class="d-flex flex-column justify-content-between">
         <div>
           <p class="mb-2">WhatsApp Messenger</p>
           <span class="cl-gray">Удобно. Надежно. Безопасно.</span>
@@ -54,6 +54,7 @@ export default {
 
   & img {
     max-width: 110px;
+    border-radius: 22.5%;
   }
 
   & button {

@@ -11,6 +11,11 @@ body, html, p, h1, h2 {
     border-bottom: 1px solid #282828;
 }
 
+.cards {
+    width:100%;
+    overflow: scroll;
+}
+
 .cl-blue {
     color: #177ae4;
 }

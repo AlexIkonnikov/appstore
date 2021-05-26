@@ -49,10 +49,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.cards {
-  width:100%;
-  overflow: scroll;
-}
 .mini-card {
   font-size: 10px;
   text-transform: uppercase;

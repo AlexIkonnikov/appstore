@@ -4,6 +4,9 @@
     <Update/>
     <Character/>
     <WhatsNew/>
+    <Preview/>
+    <Description/>
+    <Ratings/>
   </div>
 </template>
 
@@ -12,13 +15,19 @@ import Top from './components/Top';
 import Update from './components/Update';
 import Character from './components/Character';
 import WhatsNew from './components/WhatsNew';
+import Preview from './components/Preview';
+import Description from './components/Description';
+import Ratings from './components/Ratings';
 export default {
   name: 'App',
   components: {
     Top,
     Update,
     Character,
-    WhatsNew
+    WhatsNew,
+    Preview,
+    Description,
+    Ratings
   }
 };
 </script>
