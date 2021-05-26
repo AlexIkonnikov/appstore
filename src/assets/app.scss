@@ -2,6 +2,9 @@
 body, html, p, h1, h2 {
     padding: 0;
     margin: 0;
+}
+
+body, html {
     background-color: black;
 }
 
@@ -26,4 +29,29 @@ h2 {
 
 .cl-gray {
     color: #8e8e90;
+}
+
+.arrow {
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    transform: rotate(90deg);
+    &::after, &::before {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 2px;
+        background-color: #8e8e90;
+        position: absolute;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+        top: 5px;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        top: 15px;
+    }
 }

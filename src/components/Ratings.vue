@@ -10,12 +10,13 @@
             <div class="cl-gray text-center">из 5</div>
         </div>
         <div class="flex-grow-1">
-            <div class="d-flex align-items-center justify-content-start" v-for="param in params" :key="param.count">
+            <div class="d-flex align-items-center justify-content-start h-12" v-for="param in params" :key="param.count">
                 <div class="text-end star-container me-2">
                     <Star :count="param.count" />
                 </div>
                 <Progress :filling="param.filling" />
             </div>
+            <div class="cl-gray text-end">2 110 094 оценки</div>
         </div>
     </div>
   </div>
@@ -50,5 +51,9 @@ export default {
 }
 .rating {
     font-size: 60px;
+}
+
+.h-12 {
+  height: 12px;
 }
 </style>

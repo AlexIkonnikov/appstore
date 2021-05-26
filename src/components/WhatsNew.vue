@@ -8,16 +8,22 @@
         <p>Версия 2.21.100</p>
         <p>1 день назад</p>
     </div>
-    <div class="d-flex justify-content-between align-items-center">
-        <p>* Теперь вы можете прослушивать голосовые сообщения на разной скорости, нажимая кнопку 1x/1,5x/2x во время воспроизведения</p>
-        <p class="cl-blue align-self-end">ещё</p>
-    </div>
+    <More :text="text" />
   </div>
 </template>
 
 <script>
+import More from './More';
 export default {
-    name: 'WhatsNew'
+    name: 'WhatsNew',
+    components: {
+        More,
+    },
+    data() {
+        return {
+            text: '* Теперь вы можете прослушивать голосовые сообщения на разной скорости, нажимая кнопку 1x/1,5x/2x во время воспроизведения',
+        }
+    }
 }
 </script>
 

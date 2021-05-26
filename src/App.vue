@@ -8,6 +8,8 @@
     <Description/>
     <Ratings/>
     <Reviews/>
+    <Info/>
+    <Panel/>
   </div>
 </template>
 
@@ -20,6 +22,8 @@ import Preview from './components/Preview';
 import Description from './components/Description';
 import Ratings from './components/Ratings';
 import Reviews from './components/Reviews';
+import Info from './components/Info';
+import Panel from './components/Panel';
 export default {
   name: 'App',
   components: {
@@ -30,7 +34,9 @@ export default {
     Preview,
     Description,
     Ratings,
-    Reviews
+    Reviews,
+    Info,
+    Panel
   }
 };
 </script>
@@ -45,5 +51,6 @@ export default {
 .container-custom {
   max-width: 375px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 </style>

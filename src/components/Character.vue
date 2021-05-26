@@ -5,7 +5,7 @@
         <p>2,1 млн оценки</p>
         <b class="mini-card__number">4,8</b>
         <div class="mini-card__footer">
-          <Star v-for="el in Array(5)" :key="el" />
+          <Star :count="5" />
         </div>
       </div>
       <div class="mini-card d-flex flex-column align-items-center">
