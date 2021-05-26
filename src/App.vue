@@ -7,6 +7,7 @@
     <Preview/>
     <Description/>
     <Ratings/>
+    <Reviews/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import WhatsNew from './components/WhatsNew';
 import Preview from './components/Preview';
 import Description from './components/Description';
 import Ratings from './components/Ratings';
+import Reviews from './components/Reviews';
 export default {
   name: 'App',
   components: {
@@ -27,7 +29,8 @@ export default {
     WhatsNew,
     Preview,
     Description,
-    Ratings
+    Ratings,
+    Reviews
   }
 };
 </script>

@@ -6,12 +6,13 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     x="0px"
     y="0px"
-    width="10px"
-    height="10px"
+    :width="width + 'px'"
+    :height="height + 'px'"
     viewBox="0 0 475.075 475.075"
     style="enable-background: new 0 0 475.075 475.075"
     xml:space="preserve"
-    fill="#8e8e90"
+    v-for="star in Array(count)"
+    :key="star"
   >
     <g>
       <path
@@ -21,6 +22,9 @@
                 c1.997,2.766,4.993,4.142,8.992,4.142c3.428,0,7.233-1.137,11.42-3.423l128.188-67.386l128.197,67.386
                 c4.004,2.286,7.81,3.423,11.416,3.423c3.819,0,6.715-1.376,8.713-4.142c1.992-2.758,2.991-6.139,2.991-10.136
                 c0-2.471-0.096-4.374-0.287-5.712l-24.555-142.749l103.637-101.068C472.604,195.33,475.075,190.76,475.075,186.573z"
+                :stroke="stroke"
+                stroke-width="30"
+                :fill="fill"
       />
     </g>
   </svg>
@@ -28,7 +32,34 @@
 
 <script>
 export default {
-    name: 'Star'
+    name: 'Star',
+    props: {
+      count: {
+        require: false,
+        type: Number,
+        default: 1,
+      },
+      width: {
+        require: false,
+        type: Number,
+        default: 10,
+      },
+      height: {
+        require: false,
+        type: Number,
+        default: 10,
+      },
+      fill: {
+        require: false,
+        type: String,
+        default: '#8e8e90',
+      },
+      stroke: {
+        require: false,
+        type: String,
+        default: '#8e8e90',
+      }
+    }
 };
 </script>
 
